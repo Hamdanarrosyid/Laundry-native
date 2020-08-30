@@ -1,0 +1,13 @@
+{
+    "name": "hamda/laundry-native",
+    "description": "Laundry App",
+    "authors": [
+        {
+            "name": "Hamdanarrosyid",
+            "email": "hamdanarosyid@gmail.com"
+        }
+    ],
+    "require": {
+        "eftec/bladeone": "^3.46"
+    }
+}
