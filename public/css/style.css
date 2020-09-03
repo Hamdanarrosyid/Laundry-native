@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .header-bar{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+header .navbar {
+    min-height: 20px;
+    background-color: rgb(40, 40, 40);
+    transition: .3s ease background-color;
+}
+header .navbar .nav {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    justify-content: space-between;
+}
+header .nav .nav-title h1{
+    padding: 18px 0;
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+header .nav .nav-title span{
+    color: rebeccapurple;
+    font-weight: 800;
+}
+header .nav .nav-link ul{
+    list-style: none;
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+}
+header .nav .nav-link li a{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+header .nav .nav-link li a:hover{
+    color: rebeccapurple;
+}
+header .nav .nav-link li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header .nav .nav-link .bar {
+    display: none;
+}
+header .jumbotron{
+    background-image: url('../img/container.png');
+    background-position: top center ;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+header .jumbotron::after {
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    z-index: -1;
+}
+.container .title{
+    position: relative;
+    text-align: center;
+}
+header .container .title h1 {
+    display: block;
+    color: white;
+    font-size: 33px;
+    width: fit-content;
+    position: relative;
+}
+
+header .container .title a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid rebeccapurple;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 20px;
+    transition: .4s ease background-color;
+}
+
+header .container .title a:hover {
+    background-color: rebeccapurple;
+}
+
+#content{
+    float: left;
+    width: 70%;
+    padding-bottom: 100px;
+}
+#content .history {
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#content .history-top h2 {
+    letter-spacing: 3px;
+    font-size: 3rem;
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+#content .history-top h2 span{
+    color: rebeccapurple;
+    font-weight: 500;
+}
+#content .history-top p {
+    letter-spacing: .5px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+}
+#content .history-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#content .history-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-basis: 80%;
+    background-image: url(../assets/img/feliphe-schiarolli-hes6nUC1MVc-unsplash.png);
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px 5%;
+    position: relative;
+    z-index: 1;
+}
+#content .history-item::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    opacity: .6;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    z-index: -1;
+}
+#content .history-bottom .history-item img {
+    height: 70px;
+    width: 70px;
+}
+#content .history-item h3 {
+    color: white;
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 800;
+    z-index: 1;
+    cursor: pointer;
+}
+#content .history-item h3:hover {
+    color: rebeccapurple;
+}
+#content .history-item p {
+    color: white;
+    font-weight: 300;
+    z-index: 1;
+    text-align: left;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    /* padding-left: 10px; */
+}
+
+
+aside .card {
+    padding: 30px;
+    /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.171); */
+}
+aside .profile {
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    height: 60%;
+}
+aside .profile-title h1{
+    letter-spacing: 3px;
+    font-size: 2.7rem;
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+aside .profile-title{
+    padding-bottom: 36px;
+    padding-top: 20px;
+}
+aside .profile-title h2{
+    letter-spacing: 2px;
+    font-size: .8rem;
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+aside .profile-title h1 span{
+    color: rebeccapurple;
+    font-weight: 500;
+}
+aside .profile-img img{
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border: 10px solid white;
+}
+aside .profile-img{
+    position: relative;
+    z-index: 1;
+}
+aside .profile-img::after{
+    content: ' ';
+    position: absolute;
+    border: 5px solid rebeccapurple;
+    height: 100%;
+    width: 88%;;
+    top: -10px;
+    padding: 5px 0;
+    left: 1.13rem;
+    /* transform: rotate(90deg); */
+    z-index: -1;
+}
+aside .profile-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 40px 0;
+}
+aside .profile-main .box{
+    font-size: 16px;
+    text-align: left;
+    margin: 10px 0;
+}
+footer .footer{
+    min-height: 170px;
+    width: 100%;
+    background-color: rgb(45, 39, 51);
+    display: flex;
+    flex-direction: column;
+}
+footer .footer-title h1{
+    text-transform: uppercase;
+    letter-spacing: .8rem;
+    font-weight: 400;
+    font-size: 26px;
+    padding: 20px;
+    color: white;
+}
+footer .footer-title span{
+    color: rebeccapurple;
+    font-weight: 500;
+}
+footer .social-item img{
+    height: 35px;
+    width: 35px;
+}
+footer .footer .social{
+    display: flex;
+    justify-content: center;
+}
+footer .footer .social .social-item{
+    padding: 0 10px 20px 10px;
+}
+footer .footer .social .social-item a:hover{
+    opacity: .5;
+}
+
+footer .footer .text-footer {
+    font-size: 12px;
+    letter-spacing: .2rem;
+    padding: -10px;
+    color: rgb(209, 209, 209);
+}
+
+@media only screen and (min-width: 360px)  and (max-width:600px) {
+    header .nav .nav-title h1{
+        font-size: 2rem;
+    }
+    header .nav .nav-link ul{
+        list-style: none;
+        position: absolute;
+        background-color: rgb(45, 39, 51);
+        top: 0;
+        left: 100%;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        z-index: 1;
+        transition: ease .5s;
+    }
+    header .nav .nav-link ul.toggle-open {
+        left: 0;
+    }
+    header .nav .nav-link li {
+        padding: 2rem;
+    }
+    header .nav .nav-link li a{
+        color: white;
+        font-size: 3rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+    }
+    
+    
+    header .nav .nav-link .bar {
+        position: relative;
+        border: 2px solid white;
+        z-index: 10;
+        display: inline-block;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .nav .nav-link .bar h1{
+        color: white;
+    }
+    header .nav .nav-link .bar:hover{
+        opacity: .7;
+    }
+    #content{
+        float: none;
+        width: 100%;
+        padding-bottom: 0;
+    }
+    #content .history-top{
+        width: 80%;
+    }
+    #content .history-top h2{
+        font-size: 35px;
+    }
+    #content .history-bottom .history-item img {
+        height: 60px;
+        width: 60px;
+    }
+    #content .history-bottom .history-item h3 {
+        font-size: 20px;
+    }
+    #content .history-bottom .history-item p {
+        font-size: 12px;
+    }
+    aside {
+        float: none;
+        width: 100%;
+    }
+    aside .profile-title h1 {
+        font-size: 35px;
+    }
+    footer .footer .footer-title h1{
+        font-size: 22px;
+    }
+    footer .footer .text-footer p{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:1200px) {
+    header .container .title h1{
+        font-size: 40px;
+    }
+    header .container .title a{
+        font-size: 20px;
+        border-radius: 30px;
+        padding: 10px;
+    }
+    #content{
+        float: none;
+        width: 100%;
+        padding-bottom: 0;
+    }
+    #content .history-top{
+        width: 80%;
+    }
+    #content .history-top h2{
+        font-size: 40px;
+    }
+    #content .history-top p{
+        font-size: 17px;
+        font-weight: 400;
+    }
+    #content .history-bottom .history-item img {
+        height: 80px;
+        width: 80px;
+    }
+    #content .history-bottom .history-item h3 {
+        font-size: 23px;
+    }
+    #content .history-bottom .history-item p {
+        font-size: 15px;
+    }
+    aside {
+        float: none;
+        width: 100%;
+    }
+    aside .profile-title h1 {
+        font-size: 40px;
+    }
+    aside .profile-title h2 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    aside .profile-img img{
+        height: 270px;
+        width: 440px;
+    }
+    aside .profile-img::after{
+        left: 1.9rem;
+    }
+    aside .profile-main{
+        /* width: 80%; */
+        padding: 40px;
+    }
+    aside .profile-main h5{
+        /* width: 80%; */
+        font-size: 18px;
+    }aside .profile-main p{
+        /* width: 80%; */
+        font-size: 16px;
+    }
+    footer .footer .footer-title h1{
+        font-size: 26px;
+    }
+    footer .footer .social-item img{
+        height: 35px;
+        width: 35px;
+    }
+    footer .footer .text-footer p{
+        font-size: 12px;
+        /* margin-bottom: 10px; */
+    }
+}
