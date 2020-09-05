@@ -23,7 +23,6 @@
                         <h1>=</h1>
                     </div>
                     <ul>
-                        <li><a href="#header">Home</a></li>
                         <li><a href="{{BASEURL.'outlet'}}">Outlet</a></li>
                         <li><a href="#content">Login</a></li>
                         <li><a href="#profile">Register</a></li>
@@ -49,7 +48,7 @@
 <footer>
     <div class="footer container">
         <div class="footer-title">
-            <h1>web <span>Profile</span></h1>
+            <h1>web <span>Laundry</span></h1>
         </div>
         <div class="social">
             <div class="social-item">

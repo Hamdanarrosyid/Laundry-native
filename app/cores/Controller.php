@@ -8,7 +8,6 @@ class Controller {
         $views = '../resources/views';
         $cache = '../resources/cache';
         $blade = new BladeOne($views,$cache);
-        var_dump($data['outlet']);
         echo $blade->run($view,array('data'=>$data));
     }
     public function model($model)

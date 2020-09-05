@@ -18,13 +18,15 @@ class Outlet
 
     public function storeOutlet($request)
     {
-        $query = "INSERT INTO outlet ('no_pakaian','pemilik_id','kasir_id') VALUES ('',':no_pakaian',':[emilik_id',':kasir_id')";
+        $query = "INSERT INTO outlet (no_pakaian,pemilik_id,kasir_id) VALUES (:no_pakaian,:pemilik_id,:kasir_id)";
+        $this->db->query($query);
         $this->db->bind('no_pakaian',$request['no_pakaian']);
         $this->db->bind('pemilik_id',$request['pemilik_id']);
         $this->db->bind('kasir_id',$request['kasir_id']);
-        $this->db->query($query);
 
         $this->db->execute();
-        
+
+        return $this->db->rowCount();
+
     }
 }

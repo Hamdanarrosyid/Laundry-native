@@ -7,6 +7,14 @@ class OutletController extends Controller {
         return $this->view('outlet',$data);
     }
     public function store(){
-        var_dump($_POST);
+        if ($this->model('Outlet')->storeOutlet($_POST) > 0 ){
+            Flasher::setMessage('berhasil','tambahkan');
+            header('Location:'.BASEURL.'outlet');
+            exit;
+        }else{
+            Flasher::setMessage('gagal','tambahkan');
+            header('Location:'.BASEURL.'outlet');
+            exit;
+        }
     }
 }

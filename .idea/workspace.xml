@@ -21,20 +21,18 @@
   <component name="ChangeListManager">
     <list default="true" id="7598c84e-6e69-40d8-9078-987bef8b7d9c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/AboutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/OutletController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/cores/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/cores/App.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/OutletController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/OutletController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/cores/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/cores/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/cores/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/cores/Database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/init.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Outlet.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Outlet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/outlet.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/outlet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/cache/d93440663c1375df11e3e7aa5164b68856260db8.bladec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/cache/e540cdd1328b2b21e29a95405c301b9313b7c346.bladec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/cache/e5acd2425564676532321b6113b6f0e6a519f9a3.bladec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/cache/index.bladec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/cache/4f4a129b3ac39d5014ec41c36b1dd42809023f9f.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/resources/cache/4f4a129b3ac39d5014ec41c36b1dd42809023f9f.bladec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/cache/e5acd2425564676532321b6113b6f0e6a519f9a3.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/resources/cache/e5acd2425564676532321b6113b6f0e6a519f9a3.bladec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/outlet.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/outlet.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +95,7 @@
       <workItem from="1598926797842" duration="45984000" />
       <workItem from="1599093656617" duration="13298000" />
       <workItem from="1599204748942" duration="6752000" />
-      <workItem from="1599269628192" duration="8724000" />
+      <workItem from="1599269628192" duration="15369000" />
     </task>
     <servers />
   </component>
@@ -121,10 +119,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768/-1024.0.1024.768@0.0.1366.768" timestamp="1599154483475" />
-    <state x="451" y="186" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598338198313">
+    <state x="451" y="186" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599289440162">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="451" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1598338198313" />
+    <state x="451" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1599289440162" />
     <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599105685750">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -137,10 +135,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="172" width="672" height="677" key="run.anything.popup/0.0.1366.768/-1024.0.1024.768@0.0.1366.768" timestamp="1599276876252" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1599273822801">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1599293128794">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768/-1024.0.1024.768@0.0.1366.768" timestamp="1599273822801" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1598337235624" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1599293128794" />
   </component>
 </project>
