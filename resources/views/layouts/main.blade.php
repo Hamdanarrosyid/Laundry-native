@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="{{BASEURL}}css/style.css">
+        <link rel="stylesheet" href="{{BASEURL}}css/outlet.css">
+        <link rel="stylesheet" href="{{BASEURL}}css/table.css">
     <title>Laundry</title>
 </head>
 <body>
@@ -22,6 +24,7 @@
                     </div>
                     <ul>
                         <li><a href="#header">Home</a></li>
+                        <li><a href="{{BASEURL.'outlet'}}">Outlet</a></li>
                         <li><a href="#content">Login</a></li>
                         <li><a href="#profile">Register</a></li>
                     </ul>
@@ -37,10 +40,10 @@
 {{--    </div>--}}
 </header>
 <main>
-    <div id="content">
-        <div class="container">
+    <div class="container">
+{{--        <div class="container">--}}
             @yield('content')
-        </div>
+{{--        </div>--}}
     </div>
 </main>
 <footer>
@@ -64,5 +67,6 @@
         </div>
     </div>
 </footer>
+
 </body>
 </html>

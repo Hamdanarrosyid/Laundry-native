@@ -1,10 +1,15 @@
 <?php
 
-class Home extends Controller {
+class HomeController extends Controller
+{
     public function index()
     {
-        $data['makanan']='roti';
-        $data['minuman']='SUES';
-        return $this->view('index',$data);
+        $data['data'] =
+            [
+                'makanan' => ['roti','cawet','kaleng'],
+                'minuman' => ['es jerul','es tueh']
+            ];
+
+        return $this->view('index', $data);
     }
 }

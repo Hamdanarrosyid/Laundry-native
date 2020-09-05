@@ -125,8 +125,7 @@ header .container .title a:hover {
 }
 
 #content{
-    float: left;
-    width: 70%;
+    width: 100%;
     padding-bottom: 100px;
 }
 #content .history {
@@ -215,80 +214,7 @@ header .container .title a:hover {
     text-align: left;
 }
 
-aside {
-    float: right;
-    width: 30%;
-    /* padding-left: 10px; */
-}
 
-
-aside .card {
-    padding: 30px;
-    /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.171); */
-}
-aside .profile {
-    display: flex;
-    flex-direction: column;
-    min-height: 200px;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    height: 60%;
-}
-aside .profile-title h1{
-    letter-spacing: 3px;
-    font-size: 2.7rem;
-    color: black;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-aside .profile-title{
-    padding-bottom: 36px;
-    padding-top: 20px;
-}
-aside .profile-title h2{
-    letter-spacing: 2px;
-    font-size: .8rem;
-    color: black;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-aside .profile-title h1 span{
-    color: rebeccapurple;
-    font-weight: 500;
-}
-aside .profile-img img{
-    height: 200px;
-    width: 300px;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    border: 10px solid white;
-}
-aside .profile-img{
-    position: relative;
-    z-index: 1;
-}
-aside .profile-img::after{
-    content: ' ';
-    position: absolute;
-    border: 5px solid rebeccapurple;
-    height: 100%;
-    width: 88%;;
-    top: -10px;
-    padding: 5px 0;
-    left: 1.13rem;
-    /* transform: rotate(90deg); */
-    z-index: -1;
-}
-aside .profile-main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    padding: 40px 0;
-}
 aside .profile-main .box{
     font-size: 16px;
     text-align: left;
@@ -410,13 +336,6 @@ footer .footer .text-footer {
     #content .history-bottom .history-item p {
         font-size: 12px;
     }
-    aside {
-        float: none;
-        width: 100%;
-    }
-    aside .profile-title h1 {
-        font-size: 35px;
-    }
     footer .footer .footer-title h1{
         font-size: 22px;
     }
@@ -458,35 +377,6 @@ footer .footer .text-footer {
     }
     #content .history-bottom .history-item p {
         font-size: 15px;
-    }
-    aside {
-        float: none;
-        width: 100%;
-    }
-    aside .profile-title h1 {
-        font-size: 40px;
-    }
-    aside .profile-title h2 {
-        font-size: 18px;
-        font-weight: 400;
-    }
-    aside .profile-img img{
-        height: 270px;
-        width: 440px;
-    }
-    aside .profile-img::after{
-        left: 1.9rem;
-    }
-    aside .profile-main{
-        /* width: 80%; */
-        padding: 40px;
-    }
-    aside .profile-main h5{
-        /* width: 80%; */
-        font-size: 18px;
-    }aside .profile-main p{
-        /* width: 80%; */
-        font-size: 16px;
     }
     footer .footer .footer-title h1{
         font-size: 26px;

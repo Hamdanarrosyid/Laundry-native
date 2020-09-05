@@ -1,7 +1,4 @@
 @extends('layouts.main')
 @section('content')
-<h1>PPPP</h1>
-@foreach($data as $d)
-    <p>{{$d}}</p>
-@endforeach
+        <h1 style="text-align: center">Home Page</h1>
 @endsection
