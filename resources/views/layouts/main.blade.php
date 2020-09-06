@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="{{BASEURL}}css/style.css">
         <link rel="stylesheet" href="{{BASEURL}}css/outlet.css">
         <link rel="stylesheet" href="{{BASEURL}}css/table.css">
+        <link rel="stylesheet" href="{{BASEURL}}css/login.css">
     <title>Laundry</title>
 </head>
 <body>
@@ -23,9 +24,13 @@
                         <h1>=</h1>
                     </div>
                     <ul>
+                        @if(isset($_SESSION['login']))
                         <li><a href="{{BASEURL.'outlet'}}">Outlet</a></li>
-                        <li><a href="#content">Login</a></li>
-                        <li><a href="#profile">Register</a></li>
+                        <li><a href="{{BASEURL.'users/logout'}}">Log out</a></li>
+                        @else
+                        <li><a href="{{BASEURL.'users/login'}}">Login</a></li>
+                        <li><a href="{{BASEURL.'users/register'}}">Register</a></li>
+                        @endif
                     </ul>
                 </div>
             </div>

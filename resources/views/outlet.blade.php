@@ -21,13 +21,7 @@
                         <button class="button-submit" type="submit">Submit</button>
                     </div>
                     <div class="row">
-                        {{var_dump(Flasher::message())}}
-                        @if(Flasher::message()== !null)
-                            <div class="alert-succes">
-                                <p class="alert-message">ppspappp</p>
-                            </div>
-                        @endif
-{{--                        {{Flasher::message()}}--}}
+                        {{Flasher::message()}}
                     </div>
                 </div>
             </form>

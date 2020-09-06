@@ -8,6 +8,7 @@
  <link rel="stylesheet" href="<?php echo \htmlentities(BASEURL, ENT_QUOTES, 'UTF-8', false); ?>css/style.css">
  <link rel="stylesheet" href="<?php echo \htmlentities(BASEURL, ENT_QUOTES, 'UTF-8', false); ?>css/outlet.css">
  <link rel="stylesheet" href="<?php echo \htmlentities(BASEURL, ENT_QUOTES, 'UTF-8', false); ?>css/table.css">
+ <link rel="stylesheet" href="<?php echo \htmlentities(BASEURL, ENT_QUOTES, 'UTF-8', false); ?>css/login.css">
  <title>Laundry</title>
 </head>
 <body>
@@ -23,9 +24,13 @@
  <h1>=</h1>
  </div>
  <ul>
+ <?php if(isset($_SESSION['login'])): ?>
  <li><a href="<?php echo \htmlentities(BASEURL.'outlet', ENT_QUOTES, 'UTF-8', false); ?>">Outlet</a></li>
- <li><a href="#content">Login</a></li>
- <li><a href="#profile">Register</a></li>
+ <li><a href="<?php echo \htmlentities(BASEURL.'users/logout', ENT_QUOTES, 'UTF-8', false); ?>">Log out</a></li>
+ <?php else: ?>
+ <li><a href="<?php echo \htmlentities(BASEURL.'users/login', ENT_QUOTES, 'UTF-8', false); ?>">Login</a></li>
+ <li><a href="<?php echo \htmlentities(BASEURL.'users/register', ENT_QUOTES, 'UTF-8', false); ?>">Register</a></li>
+ <?php endif; ?>
  </ul>
  </div>
  </div>

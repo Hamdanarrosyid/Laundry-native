@@ -14,8 +14,9 @@ class Flasher
     public static function message()
     {
         if (isset($_SESSION['message'])) {
-
-            echo `data <strong>`.$_SESSION['message']['pesan'].`</strong> di`.$_SESSION['message']['action'];
+            echo `<div style="background-color: #11ad00;padding: 10px;border-radius: 10px">
+                        <p style="font-size: 16px;color: white">`.$_SESSION['message']['pesan'].`</p>
+                    </div>`;
             unset($_SESSION['message']);
         }
     }

@@ -1,9 +1,16 @@
 <?php
 class OutletController extends Controller {
+    public function __construct()
+    {
+        if ($_SESSION['login'] == null){
+            header('Location:'.BASEURL.'users/login');
+            exit;
+        }
+    }
+
     public function index()
     {
         $data['outlet'] = $this->model('outlet')->getAll();
-//        var_dump($data);
         return $this->view('outlet',$data);
     }
     public function store(){
