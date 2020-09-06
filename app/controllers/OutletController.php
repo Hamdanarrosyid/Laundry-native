@@ -2,7 +2,7 @@
 class OutletController extends Controller {
     public function __construct()
     {
-        if ($_SESSION['login'] == null){
+        if (!isset($_SESSION['login'])){
             header('Location:'.BASEURL.'users/login');
             exit;
         }

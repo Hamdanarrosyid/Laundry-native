@@ -24,13 +24,14 @@
                         <h1>=</h1>
                     </div>
                     <ul>
-                        @if(isset($_SESSION['login']))
-                        <li><a href="{{BASEURL.'outlet'}}">Outlet</a></li>
-                        <li><a href="{{BASEURL.'users/logout'}}">Log out</a></li>
-                        @else
+                        @if(!isset($_SESSION['login']))
                         <li><a href="{{BASEURL.'users/login'}}">Login</a></li>
                         <li><a href="{{BASEURL.'users/register'}}">Register</a></li>
+                        @elseif($_SESSION['login']['role'] == 'admin')
+                        <li><a href="{{BASEURL.'outlet'}}">Outlet</a></li>
+{{--                        @elseif($_SESSION['login']['role'] == 'admin')--}}
                         @endif
+                        <li><a href="{{BASEURL.'users/logout'}}">Log out</a></li>
                     </ul>
                 </div>
             </div>

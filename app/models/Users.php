@@ -19,7 +19,8 @@ class Users {
 
         if (password_verify($request['password'],$row['password'])){
             $_SESSION['login'] = [
-              'email' => $row['email']
+              'email' => $row['email'],
+              'role' => $row['role']
             ];
             return $this->db->rowCount();
         }else{

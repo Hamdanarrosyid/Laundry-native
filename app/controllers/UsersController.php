@@ -2,7 +2,7 @@
 class UsersController extends Controller{
     public function checkLogin()
     {
-        if ($_SESSION['login'] != null){
+        if (isset($_SESSION['login'])){
             header('Location:javascript://history.go(-1)');
             exit;
         }

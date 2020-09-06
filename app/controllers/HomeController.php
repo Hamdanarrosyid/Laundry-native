@@ -4,12 +4,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $data['data'] =
-            [
-                'makanan' => ['roti','cawet','kaleng'],
-                'minuman' => ['es jerul','es tueh']
-            ];
-
+//        var_dump($_SESSION['login']);
         return $this->view('index', $data);
     }
 }
