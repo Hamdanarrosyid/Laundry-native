@@ -21,12 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="7598c84e-6e69-40d8-9078-987bef8b7d9c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/OutletController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/OutletController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/UsersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/cache/13a2828b3adecc1c32ea3888d08afa51e147b3f3.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/resources/cache/13a2828b3adecc1c32ea3888d08afa51e147b3f3.bladec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/cache/2736fab291f04e69b62d490c3c09361f5b82461a.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/resources/cache/2736fab291f04e69b62d490c3c09361f5b82461a.bladec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/cache/e5acd2425564676532321b6113b6f0e6a519f9a3.bladec" beforeDir="false" afterPath="$PROJECT_DIR$/resources/cache/e5acd2425564676532321b6113b6f0e6a519f9a3.bladec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/register.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +91,7 @@
       <workItem from="1599093656617" duration="13298000" />
       <workItem from="1599204748942" duration="6752000" />
       <workItem from="1599269628192" duration="15439000" />
-      <workItem from="1599356503918" duration="17911000" />
+      <workItem from="1599356503918" duration="22181000" />
     </task>
     <servers />
   </component>
@@ -114,10 +115,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768/-1024.0.1024.768@0.0.1366.768" timestamp="1599154483475" />
-    <state x="451" y="186" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599289440162">
+    <state x="451" y="186" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599400720397">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="451" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1599289440162" />
+    <state x="451" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1599400720397" />
     <state x="384" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599376874709">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

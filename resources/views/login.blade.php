@@ -18,7 +18,7 @@
                         <label for="email">Email</label><span id="user_info" class="error-info"></span>
                     </div>
                     <div>
-                        <input name="email" id="email" type="email"
+                        <input required name="email" id="email" type="email"
                                class="demo-input-box">
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                         <label for="password">Password</label><span id="password_info" class="error-info"></span>
                     </div>
                     <div>
-                        <input name="password" id="password" type="password"
+                        <input required name="password" id="password" type="password"
                                class="demo-input-box">
                     </div>
                 </div>

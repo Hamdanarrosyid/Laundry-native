@@ -15,6 +15,15 @@
                 ?>
                 <div class="field-column">
                     <div>
+                        <label for="username">Username</label><span id="user_info" class="error-info"></span>
+                    </div>
+                    <div>
+                        <input required name="username" id="username" type="text"
+                               class="demo-input-box">
+                    </div>
+                </div>
+                <div class="field-column">
+                    <div>
                         <label for="email">Email</label><span id="user_info" class="error-info"></span>
                     </div>
                     <div>
